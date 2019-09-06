@@ -17,11 +17,30 @@
 // ===================
 
 
-var nama = 'Farhan'
-var umur = 33
+// var nama = 'Farhan'
+// var umur = 33
 
-console.log(sayHello());
+// console.log(sayHello());
 
-function sayHello() {
-    return `Hello, nama saya ${nama}, saya ${umur} tahun.`
+// function sayHello() {
+//     return `Hello, nama saya ${nama}, saya ${umur} tahun.`
+// }
+
+//kalo ketemu functiuon:
+// function membuat Loccal Execution Context
+// yg di dalamnya terdapat creation dan execution phase
+
+// klao local execution context kita dapat akses :
+// window
+// arguments
+// didalamnya ada hoisting juga yg local
+
+var nama = 'Farhan Yudhi Fatah'
+var username = 'masfar.id'
+
+function cetakURL(username) {
+    var instagramURL = 'http://instagram.com/'
+    return instagramURL + username
 }
+
+console.log(cetakURL(username));
