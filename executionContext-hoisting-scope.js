@@ -36,15 +36,18 @@
 // didalamnya ada hoisting juga yg local
 // ================
 
-var nama = 'Farhan Yudhi Fatah'
-var username = 'masfar.id'
+//scope
+// var nama = 'Farhan Yudhi Fatah'
+// var username = 'masfar.id'
 
-function cetakURL(username) {
-    var instagramURL = 'http://instagram.com/'
-    return instagramURL + username
-}
+// function cetakURL() {
+//     console.log(arguments); // wadoy masuk kesini kalo ga ada parameter yang nangkep
+    
+//     var instagramURL = 'http://instagram.com/'
+//     return instagramURL + username
+// }
 
-console.log(cetakURL('wadoy')); // scope
+// console.log(cetakURL('wadoy')); // scope
 
 // ==============
 
@@ -61,3 +64,30 @@ console.log(cetakURL('wadoy')); // scope
 //     b()
 // }
 // a()
+
+
+
+
+
+// LATIHAN SOAL
+
+function satu() {
+    var nama = 'Shandika'
+    console.log(nama);
+}
+
+function dua() {
+    console.log(nama)
+}
+
+console.log(nama);
+var nama = 'Erik'
+satu()
+dua('Dody')
+console.log(nama);
+
+// outputnya ?
+// undefined
+// shandika
+// erik (karena tidak ditangkap)
+// erik
