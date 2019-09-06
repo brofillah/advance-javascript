@@ -40,7 +40,7 @@ let mahasiswa2 = {
 // let farhan = Mahasiswa('Farhan', 10)
 // let Doddy = Mahasiswa('Doddy', 20)
 
-// 3. Constructor Function
+// 3. Constructor Function (yg biasa digunakan)
 function Mahasiswa (nama, energi) {
     this.nama = nama
     this.energi= energi
