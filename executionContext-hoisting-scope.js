@@ -34,27 +34,30 @@
 // window
 // arguments
 // didalamnya ada hoisting juga yg local
+// ================
 
-// var nama = 'Farhan Yudhi Fatah'
-// var username = 'masfar.id'
+var nama = 'Farhan Yudhi Fatah'
+var username = 'masfar.id'
 
-// function cetakURL(username) {
-//     var instagramURL = 'http://instagram.com/'
-//     return instagramURL + username
-// }
-
-// console.log(cetakURL(username));
-
-
-function a(){
-    console.log('ini a');
-    function b() {
-        console.log('ini b')
-        function c() {
-            console.log('ini c')
-        }
-        c()
-    }
-    b()
+function cetakURL(username) {
+    var instagramURL = 'http://instagram.com/'
+    return instagramURL + username
 }
-a()
+
+console.log(cetakURL('wadoy')); // scope
+
+// ==============
+
+// analogi exception local
+// function a(){
+//     console.log('ini a');
+//     function b() {
+//         console.log('ini b')
+//         function c() {
+//             console.log('ini c')
+//         }
+//         c()
+//     }
+//     b()
+// }
+// a()
